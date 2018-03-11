@@ -1,0 +1,12 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.nav-bar{
+	background: #24292e;
+	height: 60px;
+}
+
+h1{
+	color: red;
+}
