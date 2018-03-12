@@ -5,8 +5,14 @@
 .nav-bar{
 	background: #24292e;
 	height: 60px;
+	text-align: center;
 }
-
+.nav-content{
+	color:white;
+	display: inline-block;
+	line-height: 60px;
+	margin-left: 15px;
+}
 h1{
 	color: red;
 }
