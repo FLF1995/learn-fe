@@ -1,0 +1,28 @@
+*{ 
+margin: 0; padding: 0;
+}
+.main{
+	background: rgb(222,222,222);
+}
+.nav-bar{
+	height: 60px;
+	width: auto;
+	background:rgb(51, 51, 51);
+}
+.logo{
+	margin-left: 25px;
+}
+.navigation{
+	float: right;
+}
+.nav-value{
+	margin-right: 25px;
+	display: inline-block;
+	line-height: 60px;
+	color: red;
+}
+.whole-content{
+	background-color: gray;
+	height: 100px;
+	width: auto;
+}
