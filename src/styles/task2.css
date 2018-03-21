@@ -71,3 +71,20 @@ margin: 0; padding: 0;
 	margin-left: 40px;
 	padding-top: 20px;
 }
+.table{
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 18px;
+}
+.t-head{
+	background: black;
+	color: white;
+}
+.t-footer{
+	background: gray;
+	font-weight: bold;
+}
+.t-caption{
+	text-align: left;
+	margin-top: 20px;
+}
