@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main-container{
+	min-width: 1200px;
+}
+.navigation{
+	height: 70px;
+}
+.header-logo{
+	margin: 10px 0 0 20px;
+}
+.nav-newworld{
+	font-size: 20px;
+	font-weight: bold;
+}
+.nav-itemright{
+	display: inline-block;
+	float: right;
+	line-height: 70px;
+	margin-right: 30px;
+}
+.nav-itemright a{
+	text-decoration: none;
+	padding: 5px;
+}
+.nav-itemright a:link{
+	color: gray;
+}
+.nav-itemright a:hover{
+	color:red;
+	border-bottom: 3px solid red;
+}
+.navigation .nav-itemright .homepage{
+	color: red;
+	border-bottom: 3px solid red;
+}
+.navigation .nav-itemright .login{
+	color: red;
+}
+.start{
+	background-image: url(../images/task7/slogan-bg.png);
+	height: 690px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 200px 0 0 120px;
+}

@@ -1,0 +1,33 @@
+.wrapper{
+	height: 40px;
+	background: #ccc;
+}
+.row{
+	width: 100%;
+}
+.row-item{
+	float: left;
+	height: 60px;
+	text-align: center;
+	line-height: 40px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.bg-gray{
+	background: #eee;
+}
+.col-1{
+	width: 8.33%;
+}
+.col-2{
+	width: 16.66%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.33%;
+}
+.col-6{
+	width: 50%;
+}
