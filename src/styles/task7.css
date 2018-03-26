@@ -46,3 +46,39 @@
 	background-repeat: no-repeat;
 	padding: 200px 0 0 120px;
 }
+.new-life{
+	color: white;
+	font-weight: bolder;
+	font-size: 55px;
+}
+.new-times{
+	color: white;
+	font-size: 28px;
+	margin-top: 20px;
+}
+.enjoy{
+	background: #e74f4d;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	margin-top: 30px;
+	padding: 10px;
+	border: none;
+	width: 220px;
+	height: 80px;
+}
+.features{
+	height: 200px;
+}
+.clo-4{
+	width: 33.33%;
+	display: block;
+	float: left;
+	background: lightcoral;
+	height: 200px;
+}
+.feature-item1{
+	background-image: url(../images/task7/advancement-1.png);
+	background-repeat: no-repeat;
+	background-position: center 50px;
+}
