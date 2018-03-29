@@ -120,8 +120,39 @@
 	padding-top: 70px;
 }
 .city{
-	height: 340px;
+	height: 380px;
 	width: auto;
-	background-image: url(../images/task7/search-bg.jpg);
-	background-repeat: no-repeat;
+	background: url(../images/task7/search-bg.jpg) no-repeat;
+	background-size: cover;
+}
+.information{
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	padding-top: 70px;
+}
+.activity-information{
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+.form{
+	text-align: center;
+	padding-top: 35px;
+}
+.select{
+	width: 240px;
+	height: 36px;
+	margin-right: 25px;
+	color: darkgray;
+	-webkit-appearance: none;
+	background: #fff url(../images/task7/select-bg.png) no-repeat scroll right 10px center;
+	padding-left: 20px;
+}
+.search-button{
+	width: 240px;
+	height: 36px;
+	background: #e74f4d;
+	border: none;
 }
