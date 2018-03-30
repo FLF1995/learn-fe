@@ -156,3 +156,65 @@
 	background: #e74f4d;
 	border: none;
 }
+.show{
+	height: 590px;
+	background-color: rgb(247, 247, 247);
+}
+.picture-container{
+	width: 310px;
+	height: 419px;
+	display: inline-block;
+}
+.Beijing{
+	margin: 100px 0 0 100px;
+}
+.shanghai-shenzhen{
+	margin-top: 100px;
+}
+.xianggang{
+	margin-top: 100px;
+}
+.picture{
+	text-align: center;
+	margin-left: 53.5px;
+}
+.show-caption{
+	text-align: center;
+	padding-top: 20px;
+}
+.new-world{
+	height: 500px;
+}
+.world-left{
+	background: url(../images/task7/model1.png) no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 60%;
+	float: left;
+}
+.world-center{
+	color:white;
+	text-align: center;
+}
+.world-title{
+	font-size: 30px;
+	padding-top: 150px;
+}
+.time{
+	font-size: 25px;
+	padding-top: 20px;
+}
+.world-beijing{
+	font-size: 20px;
+	padding-top: 20px;
+}
+.date{
+	font-size: 18px;
+	padding-top: 20px;
+}
+.world-right{
+	height: 500px;
+	width: 40%;
+	background: burlywood;
+	float: left;
+}
