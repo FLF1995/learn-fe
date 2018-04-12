@@ -16,7 +16,6 @@
 	font-weight: bold;
 }
 .nav-itemright{
-	display: inline-block;
 	float: right;
 	line-height: 70px;
 	margin-right: 30px;
@@ -86,6 +85,7 @@
 	font-size: 16px;
 	display: block;
 	margin: 115px 48px 0;
+	width: 200px;
 }
 .feature-item2{
 	/* background-image: url(../images/task7/advancement-2.png);
@@ -157,30 +157,23 @@
 	border: none;
 }
 .show{
-	height: 590px;
+	padding: 100px;
 	background-color: rgb(247, 247, 247);
+	font-size: 0;
 }
 .picture-container{
-	width: 310px;
+	width: 25%;
 	height: 419px;
 	display: inline-block;
 }
-.Beijing{
-	margin: 100px 0 0 100px;
-}
-.shanghai-shenzhen{
-	margin-top: 100px;
-}
-.xianggang{
-	margin-top: 100px;
-}
 .picture{
-	text-align: center;
-	margin-left: 53.5px;
+	display: block;
+	margin: 0 auto;
 }
 .show-caption{
 	text-align: center;
 	padding-top: 20px;
+	font-size: 14px;
 }
 .new-world{
 	height: 500px;
@@ -215,6 +208,98 @@
 .world-right{
 	height: 500px;
 	width: 40%;
-	background: burlywood;
 	float: left;
+}
+.right-newworld{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 150px;
+}
+.right-01{
+	color: red;
+}
+.right-p{
+	display: block;
+	font-size: 18px;
+	color: gray;
+	margin: 30px 60px;
+}
+.more-information{
+	border: 1px solid rgb(232, 80, 80);
+	height: 40px;
+	width: 180px;
+	color: rgb(232, 80, 80);
+	margin: 0 auto;
+	display: block;
+}
+.button-list{
+	text-align: center;
+	margin-top: 40px;
+}
+.radio{
+	margin-right: 7px;
+}
+.us{
+	height: 500px;
+}
+.us-left{
+	height: 500px;
+	width: 33.33%;
+	background:  rgb(232, 80, 79);
+	float: left;
+}
+.lovelife-left{
+	color: white;
+	text-align: center;
+	padding-top: 170px;
+}
+.nothing-left{
+	color: white;
+	margin-top: 30px;
+	font-weight: bolder;
+	text-align: center;
+}
+.search-more-left{
+	height: 40px;
+	width: 160px;
+	border: 2px solid white;
+	color: white;
+	background: rgb(232, 80, 79);
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.us-middle{
+	height: 500px;
+	width: 33.33%;
+	background: white;
+	float: left;
+}
+.lovelife-middle{
+	color: black;
+	text-align: center;
+	padding-top: 170px;
+}
+.nothing-middle{
+	color: black;
+	margin-top: 30px;
+	font-weight: bolder;
+	text-align: center;
+}
+.search-more-middle{
+	height: 40px;
+	width: 160px;
+	border: 2px solid rgb(232, 80, 79);
+	color:rgb(232, 80, 79);
+	background: white;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.us-right{
+	float: left;
+	background: url(../images/task7/model2.png) no-repeat;
+	height: 500px;
+	width: 33.33%;
 }
