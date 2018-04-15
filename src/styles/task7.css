@@ -84,7 +84,7 @@
 	color: gray;
 	font-size: 16px;
 	display: block;
-	margin: 115px 48px 0;
+	margin: 115px auto 0;
 	width: 200px;
 }
 .feature-item2{
@@ -302,4 +302,7 @@
 	background: url(../images/task7/model2.png) no-repeat;
 	height: 500px;
 	width: 33.33%;
+}
+.volunteer-title{
+	text-align: center;
 }
