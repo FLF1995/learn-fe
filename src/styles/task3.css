@@ -1,14 +1,16 @@
 .container{
 	min-width: 600px;
 	background-color: #eee;
+	overflow: hidden;
+}
+.container, .left, .right, .center {
+	border: 1px solid #999;
 	padding: 10px;
 }
 .left{
 	width: 200px;
-	border: 1px solid black;
 	float: left;
 	background: #fff;
-	padding: 10px;
 }
 .left-pic{
 	width: 80px;
@@ -18,18 +20,14 @@
 }
 .center{
 	background: #fff;
-	border: 1px solid black;
-	padding: 10px;
 	margin-left: 240px;
 	margin-right: 160px;
 }
 .right{
 	background: #fff;
-	border: 1px solid black;
 	float: right;
 	width: 120px;
 	text-align: center;
-	padding: 10px;
 }
 .right-pic{
 	width: 80px;
