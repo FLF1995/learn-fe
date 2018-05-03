@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		#test {
+			width: 100px;
+			height: auto;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="test">我爱你</div>
+</body>
+<script>
+	var testX = document.getElementById('test')
+	testX.onmouseover = function () {
+		testOver();
+	}
+	testX.onmouseout = function () {
+		testStop();
+	}
+	var mar = 0;
+	var flag = 0;
+	function testOver () {
+		flag = 1;
+		testMove ();
+	}
+	function testStop () {
+		flag = 0;
+	}
+	function testMove () {
+		testX.style.marginLeft = mar + "px";
+		mar++;
+		if (flag ==1) {
+			setTimeout (testMove, 100);
+		}
+	}
+</script>
+</html>
