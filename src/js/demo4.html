@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
+
 <body>
-	<input type="text" id="test" onkeypress="button()">
-	<input type="button" value="Test" id="testbutton" onclick="clickbutton()">
-	<script>
-		var str=document.getElementById("test").value;
-		var testbutton=document.getElementById("testbutton");
-		function button(){
-			if(str==""){
-				testbutton.disabled==false;
-				function clickbutton(){
-					window.location="https://www.zhihu.com/#signin";
-				}
-				clickbutton()
-			}
-			else{
-				testbutton.disabled==true;
-				function clickbutton(){
-					alert("请输入值");
-				}
-				clickbutton()
-			}
-		}
-	</script>
+  <input type="text" id="test">
+  <button id="testbutton">Test</button>
+  <script>
+    var test = document.getElementById("test");
+    var testbutton = document.getElementById("testbutton");
+
+    test.oninput = changeEventHandle;
+    testbutton.onclick = clickEventHandler;
+    testbutton.disabled = true;
+
+    function changeEventHandler() {
+      var str = test.value;
+      if (str == "") {
+        testbutton.disabled = true;
+      } else {
+        testbutton.disabled = false;
+      }
+    }
+    function clickEventHandler() {
+      window.open('http://www.baidu.com');
+    }
+  </script>
 </body>
+
 </html>
