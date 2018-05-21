@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<SELECT id="provinceSelector" NAME="province">
+		<OPTION value="empty">请选择所在省份</OPTION>
+		<OPTION value="jiangsu">江苏省</OPTION>
+		<OPTION value="fujian">福建省</OPTION>
+	</SELECT>
+	<SELECT id="citySelector" NAME="city">
+		<OPTION>请选择所在城市</OPTION>
+	</SELECT>
+	<script>
+
+		var citiesArr = {
+			empty:[],
+			fujian: ['福州市', '厦门市', '南平市', '泉州市'],
+			jiangsu: ['南京市', '苏州市', '无锡市', '常州市'],
+		}
+
+		var provinceSelector = document.getElementById('provinceSelector');
+		var citySelector = document.getElementById('citySelector');
+
+		provinceSelector.onchange = function province(event) {
+
+			var currentProvince = provinceSelector.value;
+			var innerHtml = "<OPTION>请选择所在城市</OPTION>";
+
+			citiesArr[currentProvince].map(function(province){
+				innerHtml += '<OPTION>' + province + '</OPTION>'
+			})
+			citySelector.innerHTML=innerHtml;
+
+		}
+
+	</script>
+  </body>
+
+	</html>
