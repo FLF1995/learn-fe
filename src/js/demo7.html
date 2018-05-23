@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+	<div>
+		<a id= 'tobottom' href="javascript:;";>滚到底部</a>
+	</div>
+		<p>123</p>
+		<p>456</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+		<div>
+			<a id= 'totop'href="javascript:;";>滚到顶部</a>
+		</div>
+		<p>789</p>
+		<p>789</p>
+		<p>789</p>
+	</div>
+	<script>
+		var toTop=document.getElementById('totop');
+		var toBottom=document.getElementById('tobottom');
+
+		toTop.onclick= function(){
+			window.scrollTo(0,0)
+		}
+		toBottom.onclick = function(){
+			var bottom = document.documentElement.offsetHeight || document.body.offsetHeight;
+			window.scrollTo(0,bottom)
+		}
+	</script>
+</body>
+</html>
