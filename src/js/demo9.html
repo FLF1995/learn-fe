@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="randomArr"></div>
+	<div id="result"></div>
+</body>
+
+<script>
+	var nodeRandomArr = document.getElementById('randomArr');
+	var nodeResult = document.getElementById('result');
+
+	function bubbleSort(sourceArr) {
+		// var arr = sourceArr;
+		var arr = JSON.parse(JSON.stringify(sourceArr));
+		var len = arr.length;
+		for (var i = 0; i < len; i++) {
+			for (var j = 0; j < len - 1 - i; j++) {
+				if (arr[j] > arr[j + 1]) {        
+					var temp = arr[j + 1];        
+					arr[j + 1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+		return arr;
+	}
+
+	var randomArr = [];
+	for (let index = 0; index < 10; index++) {
+		randomArr[index] = Math.floor(Math.random() * 20)
+	}
+
+	var result = bubbleSort(randomArr)
+	nodeRandomArr.innerHTML = 'randomArr: ' + JSON.stringify(randomArr)
+	nodeResult.innerHTML = 'result: ' + JSON.stringify(result)
+
+</script>
+
+</html>
