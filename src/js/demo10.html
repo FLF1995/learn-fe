@@ -110,6 +110,7 @@
 		var prev = document.getElementById('prev');
 		var next = document.getElementById('next');
 		var index = 1; 
+		var animated = false;
 		
 		function showButton () {
 			for (let index = 0; index < buttons.length; index++) {
@@ -122,16 +123,38 @@
 		}
 
 		function animate (offset) {
+			animated = true;
 			var newLeft = parseInt(list.style.left) + offset;
+			var time = 300;
+			var interval = 10;
+			var speed = offset / (time/interval);
 
-			list.style.left = newLeft + 'px'
+			function go(){
+				if((speed < 0 && parseInt(list.style.left) > newLeft)||speed > 0 && parseInt(list.style.left) < newLeft){
+					list.style.left = parseInt(list.style.left) + speed + 'px';
+					setTimeout (go,interval);
+				} else {
+					animated = false;
+					list.style.left = newLeft + 'px';
+					if (newLeft > -600) {
+						list.style.left = -3000 +'px'
+					}
+					if (newLeft < -3000) {
+						list.style.left = -600 + 'px'
+					}
+				}
+			}	
+			go();		
+		}
 
-			if(newLeft > -600) {
-				list.style.left = -3000 + 'px'
-			}
-			if (newLeft < -3000){
-				list.style.left = -600 + 'px'
-			}
+		function play (){
+			timer = setInterval (function(){
+				next.onclick()
+			},2000)
+		}
+
+		function stop (){
+			clearInterval (timer);
 		}
 
 		next.onclick = function(){
@@ -141,7 +164,10 @@
 				index += 1;
 			}
 			showButton();
-			animate(-600)
+
+			if(animated == false){
+				animate(-600)				
+			}
 		}
 		prev.onclick = function(){
 			if (index == 1) {
@@ -150,7 +176,10 @@
 				index -= 1;
 			}
 			showButton();
-			animate(600)
+
+			if (animated == false){
+				animate(600)				
+			}
 		}
 		for (let i = 0; i < buttons.length; i++) {
 
@@ -168,9 +197,11 @@
 				showButton();
 
 			}
-			
 		}
+		container.onmouseover = stop;
+		container.onmouseout = play;
 	}
 	
+
 </script>
 </html>
