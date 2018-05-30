@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script src="./build/react.js"></script>
+		<script src="./build/react-dom.js"></script>
+		<script src="./build/browser.min.js"></script>		
+	</head>
+	<body>
+		<div id="examples"></div>
+		<script type="text/babel">
+			var name = ['Alice','Emily','Ema'];
+			var examples = document.getElementById('examples')
+
+			ReactDOM.render(<div>
+				{
+					name.map(function(name,index){
+						return <div key = {index}>Hello, {name}!</div>
+					})
+				}
+				</div>,examples)
+		</script>		
+	</body>
+</html>
