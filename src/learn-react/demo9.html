@@ -11,21 +11,25 @@
         getInitialState: function() {
           return {value: 'Hello!'};
         },
-        handleChange: function(event) {
+        handleChange: function(event){
           this.setState({value: event.target.value});
         },
-        render: function () {
+        render: function() {
           var value = this.state.value;
           return (
             <div>
-              <input type="text" value={value} onChange={this.handleChange} />
+              <input type="text" value={value} onchange={this.handleChange} />
               <p>{value}</p>
             </div>
           );
         }
       });
 
-      ReactDOM.render(<Input/>, document.getElementById('example'));
+      ReactDOM.render(
+        <Input />,
+        document.getElementById('example')
+      );
+      
     </script>
   </body>
 </html>
