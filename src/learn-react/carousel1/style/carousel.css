@@ -1,0 +1,70 @@
+*{
+	margin: 0 auto;
+	text-decoration: none;
+}
+body{
+	padding: 20px;
+}
+#carousel-container{
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+#list{
+	position: absolute;
+	z-index: 1;
+	height: 400px;
+	transition: all .2s;
+}
+#list img{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+#buttons{
+	z-index: 2;
+	position: absolute;
+	height: 10px;
+	width: 100%;
+	bottom: 20px;
+	text-align: center;
+}
+#buttons span{
+	cursor: pointer;
+	border: 1px solid #fff;
+	width: 10px;
+	display: inline-block;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+.on{
+	background: orangered;
+}
+.arrow{
+	cursor: pointer;
+	line-height: 39px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	z-index: 2;
+	top: 180px;
+	background: rgba(0,0, 0, 0.3);
+	color: #fff;
+}
+.arrow:hover{
+	background: rgba(0,0, 0, 0.7);			
+}
+#container:hover .arrow{
+	display: block;
+}
+#prev{
+	left: 20px;
+}
+#next{
+	right: 20px;
+}
