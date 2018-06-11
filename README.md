@@ -16,7 +16,7 @@ Learning front-end by practice.
 ### React practice
 * [Ajax1](https://flf1995.github.io/learn-fe/src/learn-react/demo11)
 * [Ajax2](https://flf1995.github.io/learn-fe/src/learn-react/demo12)
-* [carousel](https://flf1995.github.io/learn-fe/src/learn-react/carousel/carpusel)
+* [carousel](https://flf1995.github.io/learn-fe/src/learn-react/carousel/carousel)
 
 
 
